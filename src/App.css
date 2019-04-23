@@ -1,0 +1,58 @@
+.App {
+  background: url("pioggia-2.jpg");
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-color: orangered;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.block{
+  background-color: #272e3a;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 90vh;
+
+
+  border-radius: 5vh;
+  box-shadow: 0 0 30px rgba(0.5,1,0.2,0.9);
+}
+.form1{
+  background-color: #272e3a;
+  margin-top: 10vh;
+  width: 50%;
+  border-radius: 5vh;
+
+}
+.title{
+  background:url("rainy-weather-wallpaper.jpg");
+  background-size: cover;
+  width: 50%;
+  border-radius: 5vh 0 0 5vh;
+}
+.form2{
+  display: flex;
+  flex-direction:column;
+}
+input{
+  width: 25%;
+  margin: 2vh;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background: #272e3a;
+  color: lightblue;
+}
+p{
+  color: lightblue;
+  font-size: 20px;
+}
+h1{
+  color: lightblue;
+}
+.weather{
+  margin-top: 60px;
+}
