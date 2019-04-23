@@ -17,7 +17,7 @@
   width: 80%;
   height: 90vh;
 
-
+  border: 1px solid lightblue;
   border-radius: 5vh;
   box-shadow: 0 0 30px rgba(0.5,1,0.2,0.9);
 }
@@ -55,4 +55,9 @@ h1{
 }
 .weather{
   margin-top: 60px;
+}
+.btn{
+ margin-left: 10px;
+  background-color:#253247;
+  color: lightblue;
 }
