@@ -55,9 +55,70 @@ h1{
 }
 .weather{
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .btn{
  margin-left: 10px;
   background-color:#253247;
   color: lightblue;
 }
+.clearsky{
+  background: url("sunny.png");
+  height: 20vh;
+  width: 20vh;
+  background-size: 100% 100%;
+}
+.haze{
+  background: url("haze3.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: 100% 100%;
+}
+.overcastclouds{
+  background: url("overcast.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: 100% 100%;
+}
+.fewclouds{
+  background: url("few.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: 100% 100%;
+}
+.lightrain{
+  background: url("lightrain.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: 100% 100%;
+}
+.scatteredclouds{
+   background: url("sct.png");
+   height: 10vw;
+   width: 10vw;
+   background-size: 100% 100%;
+ }
+.mist{
+  background: url("mist.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.brokenclouds{
+  background: url("broken.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.moderaterain{
+  background: url("rain.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+

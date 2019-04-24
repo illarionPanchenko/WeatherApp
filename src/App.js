@@ -13,7 +13,7 @@ export default class App extends Component{
     city: undefined,
     country: undefined,
     humidity: undefined,
-    description: undefined,
+    description: "",
     error: undefined
 };
 
