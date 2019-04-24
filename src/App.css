@@ -127,4 +127,11 @@ h1{
   background-size: contain;
   background-repeat: no-repeat;
 }
+.lightintensityshowerrain{
+    background: url("rain.png");
+    height: 10vw;
+    width: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
