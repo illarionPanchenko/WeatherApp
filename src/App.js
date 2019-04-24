@@ -32,7 +32,7 @@ export default class App extends Component{
       humidity: data.main.humidity,
       description: data.weather[0].description,
       error: undefined
-    })}else{
+    })} else {
       this.setState({
         temperature:undefined,
         city: undefined,
