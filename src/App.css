@@ -150,3 +150,9 @@ h2{
   width: 10vw;
   background-size: 100% 100%;
 }
+.snow{
+  background: url("snow.png");
+  height: 10vw;
+  width: 10vw;
+  background-size: 100% 100%;
+}
