@@ -11,7 +11,7 @@ export default class App extends Component{
   state = {
     temperature: undefined,
     city: undefined,
-    country: undefined,
+    country: '',
     humidity: undefined,
     description: "",
     error: undefined
@@ -20,11 +20,12 @@ export default class App extends Component{
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
-    const country = e.target.elements.country.value;
+    let country = e.target.elements.country.value;
+    if(country===''){}else{country = ',' + e.target.elements.country.value}
     const api_call = await
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`);
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}${country}&appid=${API_KEY}`);
     const data = await api_call.json();
-    if (city && country) {
+    if (city) {
     this.setState({
       temperature: Math.round(data.main.temp - 273),
       city: data.name,

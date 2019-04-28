@@ -4,8 +4,8 @@ const Form = (props) => {
     return(
         <div className="form2">
             <form onSubmit={props.getWeather}>
-                <input classname = "input1" type='text' name='city' placeholder='City...'/>
-                <input classname = "input1" type='text' name='country' placeholder='Country...'/>
+                <input className = "input1" type='text' name='city' placeholder='City...'/>
+                <input className = "input1" type='text' name='country' placeholder='Country...'/>
                 <button className='btn btn-secondary'>Get weather</button>
             </form>
         </div>
