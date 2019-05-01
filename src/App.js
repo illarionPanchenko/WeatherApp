@@ -19,7 +19,7 @@ export default class App extends Component{
     error: undefined,
       lat: 50,
       lng: 30,
-      zoom: 2
+      zoom: 3
 };
 
   getWeather = async (e) => {
