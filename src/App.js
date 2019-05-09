@@ -4,7 +4,7 @@ import Form from './form';
 import Weather from './weather';
 import "./App.css"
 
-const API_KEY = 'e3e936e33460527ab6c431786272fe98';
+
 const API_FORECAST = 'e99130a37c62880a1bc1159777950b81';
 
 
