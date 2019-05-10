@@ -178,14 +178,23 @@ h2{
 }
 h6{
   color: lightblue;
+  font-size: 1vw;
 }
 .poloska {
   background-color: darkgray;
   width: 85%;
   height: 2px;
-  margin-top: 3vh;
+  margin-top: 10vh;
   border-radius: 50%;
 }
 h5{
   color: darkgray;
+  font-size: 1.2vw;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin-top: 10vh;
 }

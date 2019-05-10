@@ -21,6 +21,7 @@ export default class App extends Component{
       lng: 30,
       zoom: 3,
       main: null,
+    day: undefined,
       temp1: undefined,
       humidity1: undefined,
       main1: null,
@@ -47,16 +48,31 @@ export default class App extends Component{
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}${country}&appid=${API_FORECAST}`);
     const data = await api_call.json();
 
-   /*  const api_call_forecast = await
-          fetch(`api.openweathermap.org/data/2.5/forecast?q=${city}${country}&appid=${API_FORECAST}`);
-      const dataForecast = await api_call_forecast.list[0].json();
-      console.log(dataForecast);*/
-
-   // console.log(data);////////////////////////////////////////////////////////////////////////////////////////////
-
+  console.log(Date());
     if (city) {
-        console.log(data);
-        console.log(data.list[3].main.temp - 273);
+        const date = Date();
+        const day = [date.charAt(0), date.charAt(1), date.charAt(2)].join("");
+        const time = +[date.charAt(16), date.charAt(17)].join("");
+
+        let tonight = null;
+        if( time <= 3 ){
+          tonight = 7;
+        }else if(time<=6){
+          tonight = 6;
+        }else if(time<=9){
+          tonight = 5;
+        }else if(time<=12){
+          tonight = 4;
+        }else if(time<=15){
+          tonight = 3;
+        }else if(time<=18){
+          tonight = 2;
+        }else if(time<=21){
+          tonight = 1;
+        }else if(time<=24){
+          tonight = 0;
+        }
+
     this.setState({
       temperature: Math.round(data.list[0].main.temp - 273),
       city: data.name,
@@ -68,21 +84,22 @@ export default class App extends Component{
         lat: data.city.coord.lat,
         lng: data.city.coord.lon,
         zoom: 10,
-        temp1: Math.round(data.list[3].main.temp - 273),
-        humidity1: data.list[3].main.humidity,
-        main1: data.list[3].weather[0].main,
-        temp2: Math.round(data.list[8].main.temp - 273),
-        humidity2: data.list[8].main.humidity,
-        main2: data.list[8].weather[0].main,
-        temp3: Math.round(data.list[16].main.temp - 273),
-        humidity3: data.list[16].main.humidity,
-        main3: data.list[16].weather[0].main,
-        temp4: Math.round(data.list[24].main.temp - 273),
-        humidity4: data.list[24].main.humidity,
-        main4: data.list[24].weather[0].main,
-        temp5: Math.round(data.list[32].main.temp - 273),
-        humidity5: data.list[32].main.humidity,
-        main5: data.list[32].weather[0].main,
+      day: day,
+        temp1: Math.round(data.list[tonight].main.temp - 273),
+        humidity1: data.list[tonight].main.humidity,
+        main1: data.list[tonight].weather[0].main,
+        temp2: Math.round(data.list[tonight + 5].main.temp - 273),
+        humidity2: data.list[tonight + 5].main.humidity,
+        main2: data.list[tonight + 5].weather[0].main,
+        temp3: Math.round(data.list[tonight + 13].main.temp - 273),
+        humidity3: data.list[tonight + 13].main.humidity,
+        main3: data.list[tonight + 13].weather[0].main,
+        temp4: Math.round(data.list[tonight + 21].main.temp - 273),
+        humidity4: data.list[tonight + 21].main.humidity,
+        main4: data.list[tonight + 21].weather[0].main,
+        temp5: Math.round(data.list[tonight + 29].main.temp - 273),
+        humidity5: data.list[tonight + 29].main.humidity,
+        main5: data.list[tonight + 29].weather[0].main,
     });
         window.initMap()
     } else {
@@ -151,6 +168,7 @@ export default class App extends Component{
               temp5 = {this.state.temp5}
               humidity5={this.state.humidity5}
               main5 = {this.state.main5}
+              day = {this.state.day}
           />
           </div>
           </div>
