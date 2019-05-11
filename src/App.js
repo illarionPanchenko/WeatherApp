@@ -48,7 +48,6 @@ export default class App extends Component{
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}${country}&appid=${API_FORECAST}`);
     const data = await api_call.json();
 
-  console.log(Date());
     if (city) {
         const date = Date();
         const day = [date.charAt(0), date.charAt(1), date.charAt(2)].join("");
