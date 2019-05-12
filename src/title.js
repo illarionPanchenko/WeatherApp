@@ -15,7 +15,7 @@ export default class Title extends React.Component {
     };
 
     initMap = () => {
-        const map = new window.google.maps.Map(document.getElementById('map'), {
+         new window.google.maps.Map(document.getElementById('map'), {
             center: {lat: this.props.lat, lng: this.props.lng},
             zoom: this.props.zoom
         });
