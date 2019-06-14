@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../../style/App.css';
 
 
 export default class Title extends React.Component {
@@ -26,7 +26,7 @@ export default class Title extends React.Component {
 
         return (
             <main>
-                <div id="map"></div>
+                <div id="map"/>
             </main>
         )
     }

@@ -1,5 +1,5 @@
 .App {
-  background: url("pioggia-2.jpg");
+  background: url("../img/pioggia-2.jpg");
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -28,7 +28,7 @@
 
 }
 .title{
-  background:url("rainy-weather-wallpaper.jpg");
+  background:url("../img/rainy-weather-wallpaper.jpg");
   background-size: cover;
   width: 50%;
   border-radius: 5vh 0 0 5vh;
@@ -64,71 +64,71 @@ h1{
   color: lightblue;
 }
 .clearsky{
-  background: url("sunny.png");
+  background: url("../img/sunny.png");
   height: 20vh;
   width: 20vh;
   background-size: 100% 100%;
 }
 .haze{
-  background: url("haze3.png");
+  background: url("../img/haze3.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .overcastclouds{
-  background: url("overcast.png");
+  background: url("../img/overcast.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .fewclouds{
-  background: url("few.png");
+  background: url("../img/few.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .lightrain{
-  background: url("lightrain.png");
+  background: url("../img/lightrain.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .scatteredclouds{
-   background: url("sct.png");
+   background: url("../img/sct.png");
    height: 10vw;
    width: 10vw;
    background-size: 100% 100%;
  }
 .mist{
-  background: url("mist.png");
+  background: url("../img/mist.png");
   height: 10vw;
   width: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .brokenclouds{
-  background: url("broken.png");
+  background: url("../img/broken.png");
   height: 10vw;
   width: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .moderaterain{
-  background: url("rain.png");
+  background: url("../img/rain.png");
   height: 10vw;
   width: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .showerrain{
-  background: url("rain.png");
+  background: url("../img/rain.png");
   height: 10vw;
   width: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .lightintensityshowerrain{
-    background: url("rain.png");
+    background: url("../img/rain.png");
     height: 10vw;
     width: 10vw;
     background-size: contain;
@@ -138,26 +138,26 @@ h2{
   color: orangered;
 }
 .heavyintensityrain{
-  background: url("rain.png");
+  background: url("../img/rain.png");
   height: 10vw;
   width: 10vw;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .drizzle{
-  background: url("drizzle.png");
+  background: url("../img/drizzle.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .snow{
-  background: url("snow.png");
+  background: url("../img/snow.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;
 }
 .lightsnow {
-  background: url("snow.png");
+  background: url("../img/snow.png");
   height: 10vw;
   width: 10vw;
   background-size: 100% 100%;

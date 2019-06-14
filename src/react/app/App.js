@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Title from "./title.js";
-import Form from './form';
-import Weather from './weather';
-import "./App.css"
+import Title from "../title/title.js";
+import Form from '../form/form';
+import Weather from '../weather/weather';
+import "../../style/App.css"
 
 
 const API_FORECAST = 'e99130a37c62880a1bc1159777950b81';
