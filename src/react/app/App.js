@@ -48,7 +48,7 @@ export default class App extends Component{
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}${country}&appid=${API_FORECAST}`);
     const data = await api_call.json();
 
-    if (city) {
+    if (city&&data.list) {
         const date = Date();
         const day = [date.charAt(0), date.charAt(1), date.charAt(2)].join("");
         const time = +[date.charAt(16), date.charAt(17)].join("");
@@ -108,7 +108,7 @@ export default class App extends Component{
         country: undefined,
         humidity: undefined,
         description: undefined,
-        error: "Please enter the location",
+        error: "Please enter the correct location",
           temp1:undefined,
           humidity1: undefined,
           main1: undefined,
